@@ -1,0 +1,51 @@
+/* Task 1: Create a Basic CSS Grid Layout Start by designing a simple web page layout 
+using CSS Grid. */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color:bisque;
+}
+
+nav {
+    grid-column: 1 / span 3;
+    background-color: lightgreen;
+}
+
+nav > ul, footer > ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: 1;
+    justify-items: center;
+}
+
+footer {
+    grid-column: 1 / span 3;
+    background-color: lightgreen;
+}
+
+/* Task 2: Implement Responsive Design Using CSS Grid Modify your CSS Grid layout to be responsive. */
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+    nav > ul, footer > ul {
+        grid-template-columns: auto;
+    }
+}
