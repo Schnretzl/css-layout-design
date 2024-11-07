@@ -1,10 +1,16 @@
 /* Task 1: Create a Basic CSS Grid Layout Start by designing a simple web page layout 
 using CSS Grid. */
+body {
+    margin: 0 0 0 0;
+    background-color: #2196F3;
+}
+
+/* Task 3: Advanced Grid Layout with Template Columns and Rows */
+
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 3fr;
     grid-gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
 }
 
